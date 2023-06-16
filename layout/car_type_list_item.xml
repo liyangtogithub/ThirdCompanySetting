@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+     >
+
+    <ImageView
+        android:id="@+id/iv_car_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/date_time_marginleft"
+        android:src="@drawable/car_type_list_out" />
+
+    <TextView
+        android:id="@+id/tv_car_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="锐志"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/spinner_content" />
+
+</RelativeLayout>

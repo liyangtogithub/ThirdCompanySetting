@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_tab_height"
+        android:background="@drawable/title_bar_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+
+        <TextView
+            android:id="@+id/about_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/about_device_str"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_caption" />
+
+        <com.lqpdc.commonlib.view.TitleButton style="@style/titleButtonStyle" android:visibility="gone"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/about_info_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:dividerHeight="@dimen/split_line_height"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="false" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/white" />
+
+</LinearLayout>

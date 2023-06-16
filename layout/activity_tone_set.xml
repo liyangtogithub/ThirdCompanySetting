@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/activity_back_light_ground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/contrast_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/decorItemText" />
+
+        <LinearLayout
+            android:id="@+id/contrast_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/distance_50"
+                android:text="@string/toneContrast"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium" />
+
+            <ImageView
+                android:id="@+id/contrast_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/tone_down_selector" />
+
+            <SeekBar
+                android:id="@+id/contrast_seekbar"
+                style="@style/SeekbarStyle"
+                android:layout_width="600dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/tone_progress_bg"
+                android:max="99"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <ImageView
+                android:id="@+id/contrast_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/tone_up_selector" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/color_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/decorItemText" />
+
+        <LinearLayout
+            android:id="@+id/color_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/distance_50"
+                android:text="@string/toneColor"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium" />
+
+            <ImageView
+                android:id="@+id/color_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/tone_down_selector" />
+
+            <SeekBar
+                android:id="@+id/color_seekbar"
+                style="@style/SeekbarStyle"
+                android:layout_width="600dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/tone_progress_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:max="99"
+                 />
+
+            <ImageView
+                android:id="@+id/color_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/tone_up_selector" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/saturation_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/decorItemText" />
+
+        <LinearLayout
+            android:id="@+id/saturation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/distance_50"
+                android:text="@string/toneSaturation"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium" />
+
+            <ImageView
+                android:id="@+id/saturation_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/tone_down_selector" />
+
+            <SeekBar
+                android:id="@+id/saturation_seekbar"
+                style="@style/SeekbarStyle"
+                android:layout_width="600dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/tone_progress_bg"
+                android:max="99"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <ImageView
+                android:id="@+id/saturation_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/tone_up_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

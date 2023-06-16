@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.landsem.setting.view.MenuTextView
+        android:id="@+id/carLights_option"
+        style="@style/setting_option_style"
+        android:layout_marginTop="20dp"
+        android:text="@string/str_copy_map" />
+
+    <ProgressBar
+        android:id="@+id/progress_maping"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="500dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp" />
+    
+     <com.landsem.setting.view.MenuTextView
+        android:id="@+id/tv_station"
+        style="@style/setting_option_style"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/str_copy_check" />
+
+</LinearLayout>

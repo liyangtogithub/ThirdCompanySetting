@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include 
+        layout="@layout/activity_back_light_ground"
+        />
+    
+    <TextView
+        android:id="@+id/back_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/distance_50"
+        android:textColor="@color/black"
+        android:text="@string/back_light_test"
+        android:textSize="@dimen/medium" />
+
+    <TextView
+        android:id="@+id/back_text"
+        android:layout_toRightOf="@id/back_title"
+        android:layout_marginLeft="@dimen/distance_30"
+        android:layout_alignTop="@id/back_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/decorItemText" />
+
+    <SeekBar
+        android:id="@+id/back_light_seekbar"
+        style="@style/SeekbarStyle"
+        android:layout_below="@id/back_title"
+        android:layout_marginTop="@dimen/distance_30"
+        android:paddingLeft="@dimen/distance_50"
+        android:paddingRight="@dimen/distance_50" />
+    
+     <com.landsem.setting.view.MenuTextView
+        android:id="@+id/back_low_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_caption"
+        android:layout_below="@id/back_light_seekbar"
+        android:layout_alignLeft="@id/back_light_seekbar"
+        android:layout_marginLeft="@dimen/distance_50"
+        android:layout_marginTop="@dimen/distance_30"
+        android:gravity="center"
+        android:text="@string/saveMin"
+        android:textColor="@color/black"
+        android:background="@drawable/textbutton_bg_selector"
+        android:textSize="@dimen/medium" />
+     
+
+    <com.landsem.setting.view.MenuTextView
+        android:id="@+id/back_high_confirm"
+        android:layout_below="@id/back_light_seekbar"
+        android:layout_alignRight="@id/back_light_seekbar"
+        android:layout_marginRight="@dimen/distance_50"
+        android:layout_marginTop="@dimen/distance_30"
+        android:gravity="center"
+        android:text="@string/saveMax"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_caption"
+        android:textColor="@color/black"
+        android:background="@drawable/textbutton_bg_selector"
+        android:textSize="@dimen/medium" />
+
+</RelativeLayout>

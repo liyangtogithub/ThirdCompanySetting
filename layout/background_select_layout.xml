@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_tab_height"
+        android:background="@drawable/title_bar_bg"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/bg_select_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_bg_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="OnButtonClick"
+            android:text="@string/confirm_str"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pic_text_size" />
+
+        <com.lqpdc.commonlib.view.TitleButton style="@style/titleButtonStyle" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="250px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5px" />
+
+    <Gallery
+        android:id="@+id/bg_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginTop="5px" />
+
+</LinearLayout>

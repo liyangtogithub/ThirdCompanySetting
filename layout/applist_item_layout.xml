@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_item_style"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/app_name"
+        style="@style/common_textview_style"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/uninstall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:src="@drawable/uninstall_selector" />
+
+</LinearLayout>

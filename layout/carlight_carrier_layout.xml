@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.landsem.setting.view.SettingItemCheckboxView
+            android:id="@+id/Lights_DayLightCarLightSICBV"
+            style="@style/SettingItemStyle"
+            android:text="@string/DaynightDriveLight" />
+
+        <com.landsem.setting.view.SettingItemView
+            android:id="@+id/Lights_DayLightCarLightSensitivitySIV"
+            style="@style/SettingItemStyle"
+            android:text="@string/DaynightCarLightSensitivity" />
+
+        <com.landsem.setting.view.SettingItemView
+            android:id="@+id/Lights_HeadLightAutoShutdownTimeSIV"
+            style="@style/SettingItemStyle"
+            android:text="@string/HeadLightAutoShutdownTime" />
+
+        <com.landsem.setting.view.SettingItemView
+            android:id="@+id/Lights_CarInnerLightAutoShutdownTimeSIV"
+            style="@style/SettingItemStyle"
+            android:text="@string/CarInnerLightAutoShutdownTime" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.landsem.setting.view.SettingItemCheckboxView
+            android:id="@+id/Lock_SpeedReactionDoorAutoLockSICBV"
+            style="@style/SettingItemStyle"
+            android:text="@string/SpeedReactionDoorAutoLock" />
+
+        <com.landsem.setting.view.SettingItemCheckboxView
+            android:id="@+id/Lock_GearChangeTriggerDoorAutoLockSICBV"
+            style="@style/SettingItemStyle"
+            android:text="@string/GearChangeTriggerDoorAutoLock" />
+
+        <com.landsem.setting.view.SettingItemCheckboxView
+            android:id="@+id/Lock_PGearTriggerDoorAutoUnlockSICBV"
+            style="@style/SettingItemStyle"
+            android:text="@string/PGearTriggerDoorAutoUnlock" />
+
+        <com.landsem.setting.view.SettingItemCheckboxView
+            android:id="@+id/Lock_DoubleButtonToUnlockSICBV"
+            style="@style/SettingItemStyle"
+            android:text="@string/DoubleButtonToUnlock" />
+
+        <com.landsem.setting.view.SettingItemView
+            android:id="@+id/Lock_ToneOfLockAndUnlockSIV"
+            style="@style/SettingItemStyle"
+            android:text="@string/ToneOfLockAndUnlock" />
+
+        <com.landsem.setting.view.SettingItemCheckboxView
+            android:id="@+id/Lock_DoubleOperateKeyToUnlockSICBV"
+            style="@style/SettingItemStyle"
+            android:text="@string/DoubleOperateKeyToUnlock" />
+
+        <com.landsem.setting.view.SettingItemCheckboxView
+            android:id="@+id/Lock_DriverDoorTriggerAutoUnlockSICBV"
+            style="@style/SettingItemStyle"
+            android:text="@string/DriverDoorTriggerAutoUnlock" />
+
+        <com.landsem.setting.view.SettingItemView
+            android:id="@+id/Lock_IntelligenceDoorUnlockSIV"
+            style="@style/SettingItemStyle"
+            android:text="@string/IntelligenceDoorUnlock" />
+
+        <com.landsem.setting.view.SettingItemCheckboxView
+            android:id="@+id/Lock_IntelligenceCarLockAndOneKeyStartSICBV"
+            style="@style/SettingItemStyle"
+            android:text="@string/IntelligenceCarLockAndOneKeyStart" />
+
+        <com.landsem.setting.view.SettingItemCheckboxView
+            android:id="@+id/Lock_WarningLightFlashWhenLockAndUnlockSICBV"
+            style="@style/SettingItemStyle"
+            android:text="@string/WarningLightFlashWhenLockAndUnlock" />
+
+        <com.landsem.setting.view.SettingItemView
+            android:id="@+id/Lock_RelockTimeSIV"
+            style="@style/SettingItemStyle"
+            android:text="@string/RelockTime" />
+
+        <com.landsem.setting.view.SettingItemView
+            android:id="@+id/Lock_ElectricBackDoorOpenScaleSIV"
+            style="@style/SettingItemStyle"
+            android:text="@string/ElectricBackDoorOpenScale" />
+    </LinearLayout>
+
+</ScrollView>
