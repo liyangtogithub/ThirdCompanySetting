@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/hotspot_control_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.landsem.setting.view.MenuTextView
+            style="@style/common_textview_style"
+            android:layout_weight="1"
+            android:text="@string/hotspot_switch" />
+
+        <Switch
+            android:id="@+id/hotspot_connect"
+            style="@style/switch_style" />
+    </LinearLayout>
+
+    <View style="@style/splitline_horizontal_style" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/hotspot_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <LinearLayout
+                style="@style/layout_item_style"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/common_textview_style"
+                    android:layout_width="wrap_content"
+                    android:text="@string/str_tethering_name" />
+
+                <TextView
+                    android:id="@+id/hotspot_name"
+                    style="@style/common_textview_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/hotspot_name_edit"
+                    style="@style/common_textview_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/name_action"
+                    style="@style/common_textview_style"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/str_tethering_modify" />
+            </LinearLayout>
+
+            <View style="@style/splitline_horizontal_style" />
+
+            <LinearLayout
+                style="@style/layout_item_style"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/common_textview_style"
+                    android:layout_width="wrap_content"
+                    android:text="@string/str_tethering_password" />
+
+                <TextView
+                    android:id="@+id/hotspot_password"
+                    style="@style/common_textview_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/hotspot_password_edit"
+                    style="@style/common_textview_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/password_action"
+                    style="@style/common_textview_style"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/str_tethering_modify" />
+            </LinearLayout>
+
+            <View style="@style/splitline_horizontal_style" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/hotspot_state_hint"
+            style="@style/common_textview_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|left"
+            android:text="@string/str_hotspot_close_msg"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</LinearLayout>

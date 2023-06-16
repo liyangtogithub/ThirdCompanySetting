@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/standard_set"
+        style="@style/common_textview_style"
+        android:layout_width="wrap_content"
+        android:text="@string/back_standard_string" />
+
+    <TextView
+        android:id="@+id/standard_auto_name"
+        style="@style/common_textview_style"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/navi_setting"
+        android:gravity="center_vertical|right" />
+
+    <View
+        android:id="@+id/standard_split"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/standard_set"
+        android:background="@color/splitline_color" />
+    
+     <ListView
+        android:id="@+id/standard_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/standard_split"
+        android:divider="@color/splitline_color"
+        android:dividerHeight="1px" />
+
+</RelativeLayout>

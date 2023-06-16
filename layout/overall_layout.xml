@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <include
+        android:id="@+id/tab_function"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_tab_height"
+        android:layout_alignParentBottom="true"
+        layout="@layout/setting_titletab_roadrover" />
+
+    <FrameLayout
+        android:id="@+id/general_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_function"
+        android:visibility="invisible" />
+
+</RelativeLayout>

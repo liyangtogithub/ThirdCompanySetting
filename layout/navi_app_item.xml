@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140px"
+    android:layout_height="120px"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/app_item">
+    <ImageView
+        android:layout_marginTop="4px"
+        android:id="@+id/app_item_icon" 
+        android:layout_width="138px"
+        android:layout_height="76px"
+        android:src="@drawable/icon_launcher"/>
+  <TextView
+        android:id="@+id/app_item_name" 
+        android:layout_width="138px"
+        android:layout_height="40px"
+        android:gravity="center"
+        android:text="应用名称"/>
+
+</LinearLayout>

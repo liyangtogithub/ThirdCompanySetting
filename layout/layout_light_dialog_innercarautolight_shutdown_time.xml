@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.landsem.setting.view.SettingItemRadioButtonLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.landsem.setting.view.SettingItemCheckboxView
+        style="@style/SettingItemStyle"
+        android:text="@string/close" />
+
+    <com.landsem.setting.view.SettingItemCheckboxView
+        style="@style/SettingItemStyle"
+        android:text="@string/seconds7.5" />
+
+    <com.landsem.setting.view.SettingItemCheckboxView
+        style="@style/SettingItemStyle"
+        android:text="@string/seconds15" />
+
+    <com.landsem.setting.view.SettingItemCheckboxView
+        style="@style/SettingItemStyle"
+        android:text="@string/seconds30" />
+
+</com.landsem.setting.view.SettingItemRadioButtonLayout>

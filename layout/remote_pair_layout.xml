@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/enter_remote_pair"
+        style="@style/pair_view_style"
+        android:text="进入配对" />
+
+    <TextView
+        android:id="@+id/exit_remote_pair"
+        style="@style/pair_view_style"
+        android:text="退出配对" />
+
+    <TextView
+        android:id="@+id/remove_remote_pair"
+        style="@style/pair_view_style"
+        android:text="删除配对" />
+
+    <TextView
+        android:id="@+id/remote_pair_hint"
+        style="@style/pair_view_style"
+        android:background="@null"
+        android:layout_marginTop="8px"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="" />
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:landsem="http://schemas.android.com/apk/res/com.landsem.setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.landsem.setting.view.MenuTextView
+            android:id="@+id/wifi_connect_menu"
+            style="@style/item_textview_style"
+            android:enabled="false"
+            android:text="@string/wifi_connection" />
+
+        <com.landsem.setting.view.MenuTextView
+            android:id="@+id/hotpoint_connect_menu"
+            style="@style/item_textview_style"
+            android:text="@string/wifi_hotpoint" />
+
+        <com.landsem.setting.view.MenuTextView
+            android:id="@+id/app_manage_menu"
+            style="@style/item_textview_style"
+            android:text="@string/app_manage" />
+
+        <com.landsem.setting.view.MenuTextView
+            android:id="@+id/bluetooth_menu"
+            style="@style/item_textview_style"
+            android:text="@string/bluetooth" />
+
+        <com.landsem.setting.view.MenuTextView
+            android:id="@+id/audio_set_menu"
+            style="@style/item_textview_style"
+            android:text="@string/audio_set_str" />
+
+        <com.landsem.setting.view.MenuTextView
+            android:id="@+id/factory_mode_menu"
+            style="@style/item_textview_style"
+            android:text="@string/factory" />
+
+        <com.landsem.setting.view.MenuTextView
+            android:id="@+id/test_access_menu"
+            style="@style/item_textview_style"
+            android:text="" />
+    </LinearLayout>
+
+</ScrollView>

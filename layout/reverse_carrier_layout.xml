@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/navi_suspend"
+        style="@style/layout_item_style"
+        android:visibility="gone" >
+
+        <com.landsem.setting.view.MenuTextView
+            style="@style/item_textview_style"
+            android:layout_weight="1"
+            android:text="@string/suspensionframe" />
+
+        <com.landsem.setting.view.NaviSuspendSwitch
+            android:id="@+id/navi_suspend_switch"
+            style="@style/switch_style" />
+    </LinearLayout>
+
+    <View
+        style="@style/splitline_horizontal_style"
+        android:visibility="gone" />
+
+    <LinearLayout style="@style/layout_item_style" >
+
+        <com.landsem.setting.view.MenuTextView
+            style="@style/item_textview_style"
+            android:layout_weight="1"
+            android:text="@string/daochehoushi" />
+
+        <com.landsem.setting.view.RearViewSwitch
+            android:id="@+id/rearview_switch"
+            style="@style/switch_style" />
+    </LinearLayout>
+
+    <View style="@style/splitline_horizontal_style" />
+
+    <LinearLayout
+        style="@style/layout_item_style"
+         >
+
+        <com.landsem.setting.view.MenuTextView
+            style="@style/item_textview_style"
+            android:layout_weight="1"
+            android:text="@string/reverse_track" />
+
+        <com.landsem.setting.view.ReverseTrackSwicth
+            android:id="@+id/reverse_track_switch"
+            style="@style/switch_style" />
+    </LinearLayout>
+    
+    <View style="@style/splitline_horizontal_style" />
+
+    <LinearLayout
+        style="@style/layout_item_style"
+         >
+
+        <com.landsem.setting.view.MenuTextView
+            style="@style/item_textview_style"
+            android:layout_weight="1"
+            android:text="@string/reverse_radar" />
+
+        <com.landsem.setting.view.ReverseRadarSwicth
+            android:id="@+id/reverse_radar_switch"
+            style="@style/switch_style" />
+    </LinearLayout>
+
+    <View
+        style="@style/splitline_horizontal_style"
+        android:visibility="gone" />
+
+    <LinearLayout style="@style/layout_item_style" >
+
+        <com.landsem.setting.view.MenuTextView
+            style="@style/item_textview_style"
+            android:layout_weight="1"
+            android:text="@string/parking_warn_line" />
+
+        <com.landsem.setting.view.ParkLineSwicth
+            android:id="@+id/park_warnline_switch"
+            style="@style/switch_style" />
+    </LinearLayout>
+
+    <View style="@style/splitline_horizontal_style" />
+
+   <!--  <LinearLayout style="@style/layout_item_style" >
+
+        <com.landsem.setting.view.MenuTextView
+            style="@style/item_textview_style"
+            android:layout_weight="1"
+            android:text="@string/full_park" />
+
+        <com.landsem.setting.view.FullParkSwitch
+            android:id="@+id/full_park_switch"
+            style="@style/switch_style" />
+    </LinearLayout>
+
+    <View style="@style/splitline_horizontal_style" /> -->
+
+</LinearLayout>

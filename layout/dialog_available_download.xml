@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="604dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/alertdialog_content_bg2_below"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/warnning"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:maxLines="1"
+            android:text="@string/str_system_update"
+            android:textColor="@color/color_wifi_password_blue"
+            android:textSize="42dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alertdialog_content_bg2_bottom"
+        android:orientation="vertical"
+        android:paddingTop="15dp" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="180dp" >
+
+            <TextView
+                android:id="@+id/version_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textColor="@color/color_white"
+                android:textSize="32sp" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_btn_selector"
+                android:onClick="onClick"
+                android:text="@string/str_download_immediately"
+                android:textColor="@color/color_white"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_btn_selector"
+                android:onClick="onClick"
+                android:text="@string/str_download_later"
+                android:textColor="@color/color_white"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

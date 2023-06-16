@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/language_format"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioButton
+        android:id="@+id/zh_cn"
+        style="@style/custom_radio_style"
+        android:text="@string/chinese_simplified" />
+
+    <View style="@style/splitline_horizontal_style" />
+
+    <RadioButton
+        android:id="@+id/zh_rtw"
+        style="@style/custom_radio_style"
+        android:text="@string/chinese_complex" />
+
+    <View android:id="@+id/zh_rtw_split" style="@style/splitline_horizontal_style" />
+
+    <RadioButton
+        android:id="@+id/en_rus"
+        style="@style/custom_radio_style"
+        android:text="@string/english" />
+
+    <View android:id="@+id/en_rus_split" style="@style/splitline_horizontal_style" />
+
+</RadioGroup>

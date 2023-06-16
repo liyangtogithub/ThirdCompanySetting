@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/common_textview_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/time_format" />
+
+        <Switch
+            android:id="@+id/time_format_switch"
+            style="@style/switch_style" />
+    </LinearLayout>
+
+    <View style="@style/splitline_horizontal_style" />
+
+    <TextView
+        android:id="@+id/setting_hint"
+        style="@style/common_textview_style"
+        android:text="@string/date_format"
+        android:textColor="@color/white" />
+
+    <View style="@style/splitline_horizontal_style" />
+
+    <RadioGroup
+        android:id="@+id/date_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top|left" >
+
+        <RadioButton
+            android:id="@+id/format1"
+            style="@style/custom_radio_style"
+            android:tag="yyyy/MM/dd" />
+
+        <View style="@style/splitline_horizontal_style" />
+
+        <RadioButton
+            android:id="@+id/format2"
+            style="@style/custom_radio_style"
+            android:tag="MM/dd" />
+
+        <View style="@style/splitline_horizontal_style" />
+
+        <RadioButton
+            android:id="@+id/format3"
+            style="@style/custom_radio_style"
+            android:tag="yyyy-MM-dd" />
+    </RadioGroup>
+
+</LinearLayout>

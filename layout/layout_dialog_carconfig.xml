@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.landsem.setting.view.SettingItemRadioButtonLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.landsem.setting.view.SettingItemCheckboxView
+        android:id="@+id/Camery12LowSIV"
+        style="@style/SettingItemStyle"
+        android:text="@string/camery12Low" />
+
+    <com.landsem.setting.view.SettingItemCheckboxView
+        android:id="@+id/Camery12HihhSIV"
+        style="@style/SettingItemStyle"
+        android:text="@string/camery12High" />
+
+    <com.landsem.setting.view.SettingItemCheckboxView
+        android:id="@+id/Camery15LowSIV"
+        style="@style/SettingItemStyle"
+        android:text="@string/camery15Low" />
+
+    <com.landsem.setting.view.SettingItemCheckboxView
+        android:id="@+id/Camery15HighSIV"
+        style="@style/SettingItemStyle"
+        android:text="@string/camery15High" />
+
+</com.landsem.setting.view.SettingItemRadioButtonLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.landsem.setting.view.MenuTextView
+        android:id="@+id/daylight_adjust"
+        style="@style/common_textview_style"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|left"
+        android:text="@string/park_monitor" />
+
+    <View style="@style/splitline_horizontal_style" />
+
+    <LinearLayout
+        android:id="@+id/daylight_pattern"
+        style="@style/layout_item_style"
+        android:layout_height="140dp"
+        android:layout_alignLeft="@id/daylight_adjust"
+        android:layout_below="@id/daylight_adjust"
+        android:orientation="horizontal" >
+
+        <com.landsem.setting.view.ParkMonitorSeekbar
+            android:id="@+id/parkmonitor_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/night_seekbar_hight"
+            android:layout_marginLeft="@dimen/night_seekbar_level_margin"
+            android:layout_marginRight="@dimen/night_seekbar_level_margin"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/night_seekbar_vertical_padding"
+            android:paddingTop="@dimen/night_seekbar_vertical_padding"
+            android:progressDrawable="@drawable/seekbar_50_style" />
+    </LinearLayout>
+
+    <View style="@style/splitline_horizontal_style" />
+
+</LinearLayout>

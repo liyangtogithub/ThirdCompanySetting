@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.landsem.setting.view.SettingItemRadioButtonLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.landsem.setting.view.SettingItemCheckboxView
+        android:id="@+id/OrbitCameraDynamicTrackLineSIV"
+        style="@style/SettingItemStyle"
+        android:text="@string/DynamicTrackLine" />
+
+    <com.landsem.setting.view.SettingItemCheckboxView
+        android:id="@+id/OrbitCameraStaticTrackLineSIV"
+        style="@style/SettingItemStyle"
+        android:text="@string/StaticTrackLine" />
+
+    <com.landsem.setting.view.SettingItemCheckboxView
+        android:id="@+id/OrbitCameraWarningLineSIV"
+        style="@style/SettingItemStyle"
+        android:text="@string/WarningLine" />
+
+</com.landsem.setting.view.SettingItemRadioButtonLayout>

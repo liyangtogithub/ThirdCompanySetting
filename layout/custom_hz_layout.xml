@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:landsem="http://schemas.android.com/apk/res/com.landsem.setting"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_hz_edittext_height"
+        android:layout_marginLeft="@dimen/custom_hz_apeak_margin"
+        android:layout_marginRight="@dimen/custom_hz_apeak_margin"
+        android:layout_marginTop="@dimen/custom_hz_apeak_margin"
+        android:background="@drawable/show_hz_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/show_fmhz"
+            style="@style/common_textview_style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/custom_hz_edittext_height"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/delete_fmhz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40px"
+            android:clickable="true"
+            android:src="@drawable/delete_hz_selector" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/common_textview_style"
+        android:layout_marginBottom="12px"
+        android:layout_marginTop="12px"
+        android:gravity="center"
+        android:text="@string/custom_hz_hint"
+        android:textSize="@dimen/launch_hz_hint_textsize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/custom_hz_apeak_margin"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <com.landsem.setting.view.HzKey
+            android:id="@+id/key_num1"
+            style="@style/custom_keynum_style"
+            android:layout_marginLeft="0px"
+            android:gravity="center"
+            landsem:key_num="@integer/key_num1" />
+
+        <com.landsem.setting.view.HzKey
+            android:id="@+id/key_num2"
+            style="@style/custom_keynum_style"
+            android:gravity="center"
+            landsem:key_num="@integer/key_num2" />
+
+        <com.landsem.setting.view.HzKey
+            android:id="@+id/key_num3"
+            style="@style/custom_keynum_style"
+            android:gravity="center"
+            landsem:key_num="@integer/key_num3" />
+
+        <com.landsem.setting.view.HzKey
+            android:id="@+id/key_num4"
+            style="@style/custom_keynum_style"
+            android:gravity="center"
+            landsem:key_num="@integer/key_num4" />
+
+        <com.landsem.setting.view.HzKey
+            android:id="@+id/key_num5"
+            style="@style/custom_keynum_style"
+            android:gravity="center"
+            landsem:key_num="@integer/key_num5" />
+
+        <com.landsem.setting.view.HzKey
+            android:id="@+id/key_num_point"
+            style="@style/custom_keynum_style"
+            android:gravity="center"
+            landsem:key_num="@integer/key_num_point" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/custom_hz_apeak_margin"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <com.landsem.setting.view.HzKey
+            android:id="@+id/key_num6"
+            style="@style/custom_keynum_style"
+            android:layout_marginLeft="0px"
+            android:gravity="center"
+            landsem:key_num="@integer/key_num6" />
+
+        <com.landsem.setting.view.HzKey
+            android:id="@+id/key_num7"
+            style="@style/custom_keynum_style"
+            android:gravity="center"
+            landsem:key_num="@integer/key_num7" />
+
+        <com.landsem.setting.view.HzKey
+            android:id="@+id/key_num8"
+            style="@style/custom_keynum_style"
+            android:gravity="center"
+            landsem:key_num="@integer/key_num8" />
+
+        <com.landsem.setting.view.HzKey
+            android:id="@+id/key_num9"
+            style="@style/custom_keynum_style"
+            android:gravity="center"
+            landsem:key_num="@integer/key_num9" />
+
+        <com.landsem.setting.view.HzKey
+            android:id="@+id/key_num0"
+            style="@style/custom_keynum_style"
+            android:gravity="center"
+            landsem:key_num="@integer/key_num0" />
+
+        <com.landsem.setting.view.HzKey
+            android:id="@+id/key_num_save"
+            style="@style/custom_keynum_style"
+            android:gravity="center"
+            android:visibility="gone"
+            landsem:key_num="@integer/key_num_save" />
+
+        <ImageView
+            android:id="@+id/save_customhz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/custom_hz_level_margin"
+            android:clickable="true"
+            android:src="@drawable/savebg_selector" />
+    </LinearLayout>
+
+</LinearLayout>

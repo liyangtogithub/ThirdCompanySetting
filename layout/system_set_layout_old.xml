@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/language_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.landsem.setting.view.MenuTextView
+                style="@style/item_textview_style"
+                android:text="@string/launguage_set_str" />
+
+            <Spinner
+                android:id="@+id/spinner_language"
+                style="@style/spinner_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/navi_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.landsem.setting.view.MenuTextView
+                style="@style/item_textview_style"
+                android:text="@string/navigation_set_str" />
+
+            <Spinner
+                android:id="@+id/spinner_navigation"
+                style="@style/spinner_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/stand_duration_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.landsem.setting.view.MenuTextView
+                style="@style/item_textview_style"
+                android:text="@string/stand_duration" />
+
+            <Spinner
+                android:id="@+id/spinner_stand_duration"
+                style="@style/spinner_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/alarm_scale_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.landsem.setting.view.MenuTextView
+                style="@style/item_textview_style"
+                android:text="@string/alarm_scale" />
+
+            <Spinner
+                android:id="@+id/spinner_alarm_scale"
+                style="@style/spinner_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/delay_acc_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.landsem.setting.view.MenuTextView
+                style="@style/item_textview_style"
+                android:text="@string/delay_acc_time" />
+
+            <Spinner
+                android:id="@+id/spinner_delay_acc"
+                style="@style/spinner_style" />
+        </RelativeLayout>
+
+        <com.landsem.setting.view.MenuTextView
+            android:id="@+id/upgrade_system_menu"
+            style="@style/item_textview_style"
+            android:text="@string/system_update" />
+
+        <com.landsem.setting.view.MenuTextView
+            android:id="@+id/recovery_menu"
+            style="@style/item_textview_style"
+            android:text="@string/privacy_setting" />
+
+        <com.landsem.setting.view.MenuTextView
+            style="@style/item_textview_style"
+            android:text="" />
+    </LinearLayout>
+
+</ScrollView>

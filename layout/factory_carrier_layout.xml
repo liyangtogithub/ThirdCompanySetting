@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingTop="10dp" >
+
+    <com.landsem.setting.view.MenuTextView
+        style="@style/common_textview_style"
+        android:gravity="center"
+        android:text="@string/reset_factory_data"
+        android:textColor="@color/white" />
+
+    <View style="@style/splitline_horizontal_style" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.landsem.setting.view.MenuTextView
+        style="@style/common_textview_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/reset_factory_data_hint" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.landsem.setting.view.MenuTextView
+        android:id="@+id/reset_factary"
+        style="@style/common_textview_style"
+        android:layout_width="@dimen/textbutton_width"
+        android:layout_height="@dimen/textbutton_height"
+        android:background="@drawable/textbutton_bg_selector"
+        android:gravity="center"
+        android:text="@string/confirm" />
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_setbluetoothdevicename"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <EditText
+        android:id="@+id/setbluetoothdevicename_editext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_edittext"
+        android:ems="20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/setbluetoothdevicename_sure_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/selecter_color"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/setbluetoothdevicename_cancel_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/selecter_color"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+</LinearLayout>

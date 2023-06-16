@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wifi_connect_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/wifi_control_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.landsem.setting.view.MenuTextView
+            style="@style/common_textview_style"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="@string/wifi_switch" />
+
+        <Switch
+            android:id="@+id/wifi_connect"
+            style="@style/switch_style" />
+    </LinearLayout>
+
+    <View style="@style/splitline_horizontal_style" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/wifi_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" />
+
+        <com.landsem.setting.view.MenuTextView
+            android:id="@+id/empty"
+            style="@style/common_textview_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|left"
+            android:text="@string/str_wifi_empty_msg"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+</LinearLayout>

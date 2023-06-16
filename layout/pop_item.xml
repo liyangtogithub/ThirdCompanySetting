@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pop_linearlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/apk_manager_pop_bg"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/start_app"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables" >
+
+        <ImageView
+            android:id="@+id/start_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/run_normal"
+            android:contentDescription="@string/description" />
+
+        <TextView
+            android:id="@+id/start_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/start"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_manager_pop_text_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/split_line" />
+
+    <LinearLayout
+        android:id="@+id/stop_app"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/stop_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/stop_normal"
+            android:contentDescription="@string/description" />
+
+        <TextView
+            android:id="@+id/stop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/stop"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_manager_pop_text_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/split_line" />
+
+    <LinearLayout
+        android:id="@+id/uninstall_app"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/uninstall_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/uninstall_normal"
+            android:contentDescription="@string/description" />
+
+        <TextView
+            android:id="@+id/uninstall_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/uninstall"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_manager_pop_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

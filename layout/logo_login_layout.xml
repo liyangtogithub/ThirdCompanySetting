@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:minHeight="@dimen/logo_login_layout_min_height"
+    android:minWidth="@dimen/logo_login_layout_min_width"
+    android:paddingBottom="@dimen/logo_login_layout_padding_bottom"
+    android:paddingLeft="@dimen/logo_login_layout_padding_horizontal"
+    android:paddingRight="@dimen/logo_login_layout_padding_horizontal"
+    android:paddingTop="@dimen/logo_login_layout_padding_top" >
+
+    <TextView
+        android:id="@+id/input_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/logo_pwd_load"
+        android:textSize="@dimen/input_hint_size" />
+
+    <LinearLayout
+        android:id="@+id/password_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/logo_login_pwdline_margintop"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/password1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:src="@drawable/indicator_normal" />
+
+        <ImageView
+            android:id="@+id/password2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/logo_login_pwd_margin_left"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:src="@drawable/indicator_normal" />
+
+        <ImageView
+            android:id="@+id/password3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/logo_login_pwd_margin_left"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:src="@drawable/indicator_normal" />
+
+        <ImageView
+            android:id="@+id/password4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/logo_login_pwd_margin_left"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:src="@drawable/indicator_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/logo_login_keyline_margintop"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/key_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/key1"
+                style="@style/keybood_style"
+                android:tag="1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/key2"
+                style="@style/keybood_mid_style"
+                android:tag="2"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/key3"
+                style="@style/keybood_style"
+                android:tag="3"
+                android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/key_line2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/logo_login_keyline_margintop"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/key4"
+                style="@style/keybood_style"
+                android:tag="4"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/key5"
+                style="@style/keybood_mid_style"
+                android:tag="5"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/key6"
+                style="@style/keybood_style"
+                android:tag="6"
+                android:text="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/key_line3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/logo_login_keyline_margintop"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/key7"
+                style="@style/keybood_style"
+                android:tag="7"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/key8"
+                style="@style/keybood_mid_style"
+                android:tag="8"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/key9"
+                style="@style/keybood_style"
+                android:tag="9"
+                android:text="9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/key_line4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/logo_login_keyline_margintop"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/keycancel"
+                style="@style/keybood_style"
+                android:background="@drawable/cancel_selector"
+                android:tag="-1" />
+
+            <Button
+                android:id="@+id/key0"
+                style="@style/keybood_mid_style"
+                android:tag="0"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/keydelete"
+                style="@style/keybood_style"
+                android:background="@drawable/delete_selector"
+                android:tag="-2" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

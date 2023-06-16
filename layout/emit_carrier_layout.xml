@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/layout_item_style" >
+
+        <TextView
+            android:id="@+id/launch_switch_word"
+            style="@style/common_textview_style"
+            android:layout_weight="1"
+            android:text="@string/fm_launch_switch" />
+
+        <Switch
+            android:id="@+id/fm_switch"
+            style="@style/switch_style" />
+    </LinearLayout>
+
+    <View style="@style/splitline_horizontal_style" />
+
+    <LinearLayout
+        android:id="@+id/emit_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="90dp"
+            android:paddingRight="90dp" >
+
+            <ImageView
+                android:id="@+id/prev_freq_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:src="@drawable/prev_freq_selector" />
+
+            <TextView
+                android:id="@+id/curr_freq_point"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="1"
+                android:gravity="top|center_horizontal"
+                android:textColor="@color/selecter_color"
+                android:textSize="70sp" />
+
+            <ImageView
+                android:id="@+id/next_freq_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:src="@drawable/next_freq_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|bottom" >
+
+            <TextView
+                android:id="@+id/freq_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="@string/min_value"
+                android:textColor="@color/selecter_color"
+                android:textSize="24px" />
+
+            <SeekBar
+                android:id="@+id/freq_seekbar"
+                android:layout_width="0dp"
+                android:layout_height="59dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:maxHeight="100dp"
+                android:minHeight="100dp"
+                android:progress="50"
+                android:progressDrawable="@drawable/freq_seek_bg"
+                android:thumb="@drawable/point"
+                android:thumbOffset="0dp" />
+
+            <TextView
+                android:id="@+id/freq_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="@string/max_value"
+                android:textColor="@color/selecter_color"
+                android:textSize="24px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/marked_words"
+        style="@style/common_textview_style"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:text="@string/fm_launch_hint"
+        android:textColor="@color/white" />
+
+</LinearLayout>

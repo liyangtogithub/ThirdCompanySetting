@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:merlin="http://schemas.android.com/apk/res/com.landsem.setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp" >
+
+    <com.landsem.setting.view.SettingItemView
+        android:id="@+id/LayoutDialogTitleSIV"
+        style="@style/DialogTitleTextStyle"
+        android:layout_alignParentTop="true"
+        android:singleLine="true" />
+
+    <com.landsem.setting.view.SettingItemView
+        android:id="@+id/LayoutDialogCancelSIV"
+        style="@style/DialogCancelTextStyle"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/Cancel"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/LayoutDialogCancelSIV"
+        android:layout_below="@id/LayoutDialogTitleSIV"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none" >
+
+        <FrameLayout
+            android:id="@+id/LayoutDialogContentFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</RelativeLayout>

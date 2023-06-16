@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:landsem="http://schemas.android.com/apk/res/com.landsem.setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/layout_item_style" >
+
+        <TextView
+            android:id="@+id/launch_switch_word"
+            style="@style/common_textview_style"
+            android:layout_weight="1"
+            android:text="@string/fm_launch_switch" />
+
+        <Switch
+            android:id="@+id/fm_switch"
+            style="@style/switch_style" />
+    </LinearLayout>
+
+    <View style="@style/splitline_horizontal_style" />
+
+    <LinearLayout
+        android:id="@+id/launch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/layout_item_style" >
+
+            <com.landsem.setting.view.LaunchHz
+                android:id="@+id/launch_hz1"
+                style="@style/launch_textview_style"
+                landsem:customAble="false"
+                landsem:fmHZ="@integer/launch_945" />
+
+            <com.landsem.setting.view.LaunchHz
+                android:id="@+id/launch_hz2"
+                style="@style/launch_textview_style"
+                landsem:customAble="false"
+                landsem:fmHZ="@integer/launch_964" />
+
+            <com.landsem.setting.view.LaunchHz
+                android:id="@+id/launch_hz3"
+                style="@style/launch_textview_style"
+                landsem:customAble="false"
+                landsem:fmHZ="@integer/launch_980" />
+
+            <com.landsem.setting.view.LaunchHz
+                android:id="@+id/launch_hz4"
+                style="@style/launch_textview_style"
+                landsem:customAble="false"
+                landsem:fmHZ="@integer/launch_1005" />
+        </LinearLayout>
+
+        <View style="@style/splitline_horizontal_style" />
+
+        <LinearLayout style="@style/layout_item_style" >
+
+            <com.landsem.setting.view.LaunchHz
+                android:id="@+id/launch_hz5"
+                style="@style/launch_textview_style"
+                landsem:customAble="false"
+                landsem:fmHZ="@integer/launch_1014" />
+
+            <com.landsem.setting.view.LaunchHz
+                android:id="@+id/launch_hz6"
+                style="@style/launch_textview_style"
+                landsem:customAble="false"
+                landsem:fmHZ="@integer/launch_1019" />
+
+            <com.landsem.setting.view.LaunchHz
+                android:id="@+id/launch_hz7"
+                style="@style/launch_textview_style"
+                landsem:customAble="false"
+                landsem:fmHZ="@integer/launch_1071" />
+
+            <com.landsem.setting.view.LaunchHz
+                android:id="@+id/launch_hz8"
+                style="@style/launch_textview_style"
+                landsem:customAble="true"
+                landsem:fmHZ="@integer/launch_custom" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/splitline_horizontal_style" />
+
+    <TextView
+        android:id="@+id/marked_words"
+        style="@style/launch_textview_style"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:text="@string/fm_launch_hint"
+        android:textColor="@color/white" />
+
+</LinearLayout>

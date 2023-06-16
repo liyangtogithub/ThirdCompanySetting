@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/tab_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        layout="@layout/tab_func_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/inner_content_margin_Y_size"
+        android:layout_marginLeft="@dimen/inner_content_margin_X_size"
+        android:layout_marginRight="@dimen/inner_content_margin_X_size"
+        android:layout_marginTop="@dimen/inner_content_margin_Y_size" >
+
+        <FrameLayout
+            android:id="@+id/general_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/list_background" >
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

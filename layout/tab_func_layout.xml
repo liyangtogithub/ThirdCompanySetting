@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_tab_height"
+    android:layout_weight="1"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/device_option"
+        style="@style/tab_option_style"
+        android:drawableTop="@drawable/device_icon" />
+
+    <TextView
+        android:id="@+id/personal_option"
+        style="@style/tab_option_style"
+        android:drawableTop="@drawable/personal_icon" />
+
+    <TextView
+        android:id="@+id/system_option"
+        style="@style/tab_option_style"
+        android:drawableTop="@drawable/system_icon" />
+
+    <TextView
+        android:id="@+id/display_option"
+        style="@style/tab_option_style"
+        android:drawableTop="@drawable/display_icon" />
+
+    <TextView
+        android:id="@+id/back_option"
+        style="@style/tab_option_style"
+        android:drawableTop="@drawable/back_icon" />
+
+</LinearLayout>

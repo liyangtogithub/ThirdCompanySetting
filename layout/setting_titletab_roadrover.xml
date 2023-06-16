@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_tab_height"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <LinearLayout style="@style/bottomOptionStyle1" >
+
+        <TextView
+            android:id="@+id/connect_option"
+            style="@style/bottomTextviewStyle"
+            android:background="@drawable/selector_bottom_connect_bg"
+            android:text="@string/connect_option" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/bottomOptionStyle1" >
+
+        <TextView
+            android:id="@+id/display_option"
+            style="@style/bottomTextviewStyle"
+            android:background="@drawable/selector_bottom_display_bg"
+            android:text="@string/display_option" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/bottomOptionStyle1" >
+
+        <TextView
+            android:id="@+id/voice_option"
+            style="@style/bottomTextviewStyle"
+            android:background="@drawable/selector_bottom_voice_bg"
+            android:text="@string/voice_option" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/bottomOptionStyle1" >
+
+        <TextView
+            android:id="@+id/system_option"
+            style="@style/bottomTextviewStyle"
+            android:background="@drawable/selector_bottom_system_bg"
+            android:text="@string/system_option" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/bottomOptionStyle1" >
+
+        <TextView
+            android:id="@+id/car_option"
+            style="@style/bottomTextviewStyle"
+            android:background="@drawable/selector_bottom_car_bg"
+            android:text="@string/car_option" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/contacts_type"
+        style="@style/common_textview_style"
+        android:layout_width="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        style="@style/layout_item_style"
+        android:layout_width="@dimen/contacts_action_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/contacts_action_selector" >
+
+        <TextView
+            android:id="@+id/contacts_name"
+            style="@style/common_textview_style"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:longClickable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/contacts_append"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:src="@drawable/append_selector" />
+    </RelativeLayout>
+
+</LinearLayout>

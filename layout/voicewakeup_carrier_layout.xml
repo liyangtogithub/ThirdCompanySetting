@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/layout_item_style" >
+
+        <com.landsem.setting.view.MenuTextView
+            android:id="@+id/voiceswitch_hint"
+            style="@style/item_textview_style"
+            android:layout_weight="1"
+            android:text="@string/voice_switch" />
+
+        <com.landsem.setting.view.VoiceSwitch
+            android:id="@+id/voicewakeup_switch"
+            style="@style/switch_style" />
+    </LinearLayout>
+
+    <View style="@style/splitline_horizontal_style" />
+
+</LinearLayout>

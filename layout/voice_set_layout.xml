@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/display_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/content_padding"
+        android:paddingRight="@dimen/content_padding" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/vertical_split_line"
+        tools:ignore="ContentDescription" />
+
+    <ScrollView
+        android:id="@+id/system_options"
+        style="@style/fragment_right_style"
+        android:layout_weight="2"
+        android:background="@drawable/right_bg" >
+
+        <com.landsem.setting.view.MenuTextViewLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.landsem.setting.view.MenuTextView
+                android:id="@+id/fmlaunch_option"
+                style="@style/setting_option_style"
+                android:text="@string/fm_launch"
+                android:visibility="gone" />
+
+            <com.landsem.setting.view.MenuTextView
+                android:id="@+id/tohes_option"
+                style="@style/setting_option_style"
+                android:text="@string/tohes_option" />
+
+            <com.landsem.setting.view.MenuTextView
+                android:id="@+id/voice_wakeup"
+                style="@style/setting_option_style"
+                android:text="@string/voice_switch" />
+            <com.landsem.setting.view.MenuTextView
+                android:id="@+id/voice_ampli"
+                style="@style/setting_option_style"
+                android:text="@string/voice_ampli" />
+        </com.landsem.setting.view.MenuTextViewLayout>
+    </ScrollView>
+
+</LinearLayout>

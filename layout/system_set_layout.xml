@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/system_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/content_padding"
+        android:paddingRight="@dimen/content_padding" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/vertical_split_line" />
+
+    <ScrollView
+        android:id="@+id/system_options"
+        style="@style/fragment_right_style"
+        android:layout_weight="2"
+        android:background="@drawable/right_bg" >
+
+        <com.landsem.setting.view.MenuTextViewLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.landsem.setting.view.MenuTextView
+                android:id="@+id/language_option"
+                style="@style/setting_option_style"
+                android:enabled="false"
+                android:text="@string/launguage_set_str" />
+
+            <com.landsem.setting.view.MenuTextView
+                android:id="@+id/timeset_option"
+                style="@style/setting_option_style"
+                android:text="@string/date_time_setting"
+                android:visibility="gone" />
+
+            <com.landsem.setting.view.MenuTextView
+                android:id="@+id/lockscreen_option"
+                style="@style/setting_option_style"
+                android:text="@string/autolock_screen"
+                android:visibility="gone" />
+
+            <com.landsem.setting.view.MenuTextView
+                android:id="@+id/stand_duration_option"
+                style="@style/setting_option_style"
+                android:text="@string/stand_duration" />
+
+            <com.landsem.setting.view.MenuTextView
+                android:id="@+id/park_monitor_option"
+                style="@style/setting_option_style"
+                android:singleLine="true"
+                android:text="@string/park_monitor" />
+
+            <com.landsem.setting.view.MenuTextView
+                android:id="@+id/assistive_touch"
+                style="@style/setting_option_style"
+                android:text="@string/assistive_touch"
+                android:visibility="gone" />
+
+            <com.landsem.setting.view.MenuTextView
+                android:id="@+id/system_upgrade_option"
+                style="@style/setting_option_style"
+                android:text="@string/system_update"
+                android:visibility="gone" />
+            
+            <com.landsem.setting.view.MenuTextView
+                android:id="@+id/upload_log_option"
+                style="@style/setting_option_style"
+                android:text="@string/upload_log" />
+            
+             <com.landsem.setting.view.MenuTextView
+                android:id="@+id/screen_calibration"
+                style="@style/setting_option_style"
+                android:text="@string/screenCalibration" />
+             
+             <com.landsem.setting.view.MenuTextView
+                android:id="@+id/light_study"
+                style="@style/setting_option_style"
+                android:text="@string/lightStudy" />
+             
+             <com.landsem.setting.view.MenuTextView
+                android:id="@+id/tone_set"
+                style="@style/setting_option_style"
+                android:text="@string/toneSet" />
+             
+              <com.landsem.setting.view.MenuTextView
+                android:id="@+id/cvbs_set"
+                style="@style/setting_option_style"
+                android:text="@string/cvbsSet" />
+
+            <com.landsem.setting.view.MenuTextView
+                android:id="@+id/recovery_option"
+                style="@style/setting_option_style"
+                android:text="@string/privacy_setting" />
+
+            <com.landsem.setting.view.MenuTextView
+                android:id="@+id/delay_acc_option"
+                style="@style/setting_option_style"
+                android:text="@string/delay_acc_time"
+                android:visibility="gone" />
+
+            <com.landsem.setting.view.MenuTextView
+                android:id="@+id/alarm_scale_option"
+                style="@style/setting_option_style"
+                android:text="@string/alarm_scale"
+                android:visibility="gone" />
+        </com.landsem.setting.view.MenuTextViewLayout>
+    </ScrollView>
+
+</LinearLayout>
